@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    max-width: 1544px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    z-index: 97;
+}
+header .h-full{
+    height: 100%;
+}
+header .h-full .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .h-full .header-wrapper .logo{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 800;
+    color: #1E1C24;
+}
+header .h-full .header-wrapper a{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 15px 32px;
+    border: 2px solid #ffffff;
+}
+
+.hero-section{
+    overflow: hidden;
+}
+.hero-section .hero-section-wrapper{
+    display:flex; 
+    padding: 308px 0;
+}
+.hero-section .hero-section-wrapper .w-50{
+    width: 50%;
+    position: relative;
+}
+.hero-section .hero-section-wrapper .w-50 h1{
+    font-size: 75px;
+    line-height: 97px;
+    font-weight: 800;
+    color: #1E1C24;
+    margin-bottom: 30px;
+}
+.hero-section .hero-section-wrapper .w-50 p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height:35px;
+    color: #B1AAAA;
+    max-width: 595px;
+}
+.hero-section .hero-section-wrapper .w-50 .form-content{
+    margin-top: 40px;
+}
+.hero-section .hero-section-wrapper .w-50 .form-content input{
+    padding:25px;
+    border: 1px solid #EBEBEB;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 46%;
+}
+.hero-section .hero-section-wrapper .w-50 .form-content button{
+    background-color: #0634FF;
+    color: #ffffff;
+    padding:20px 48px;
+    font-size: 23px;
+    border-radius: 100px;
+    box-shadow: 0px 30px 50px #0634FF57;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners{
+    margin-top: 210px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .brand{
+    margin-bottom: 60px;
+    margin-right: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+.hero-section .hero-section-wrapper .w-50 .partners .brand:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .cn{
+    background-image: url(assets/images/partners/Cartoon_Network_logo.svg);
+    width: 97px;
+    height: 59px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .booking{
+    background-image: url(assets/images/partners/Booking.com_logo.svg);
+    width: 262px;
+    height: 44px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .dropbox{
+    background-image: url(assets/images/partners/Dropbox_logo.svg);
+    width: 229px;
+    height: 45px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .toshiba{
+    background-image: url(assets/images/partners/Toshiba_logo.svg);
+    width: 207px;
+    height: 32px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .slack{
+    background-image: url(assets/images/partners/Slack_logo.svg);
+    width: 156px;
+    height: 47px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .netflix{
+    background-image: url(assets/images/partners/Netflix_logo.svg);
+    width: 142px;
+    height: 39px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .spotify{
+    background-image: url(assets/images/partners/Spotify_logo.svg);
+    width: 189px;
+    height: 57px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .coca{
+    background-image: url(assets/images/partners/CocaCola_logo.svg);
+    width: 157px;
+    height: 51px;
+}
+.hero-section .hero-section-wrapper .w-50 .partners .red-bull{
+    background-image: url(assets/images/partners/RedBull_logo.svg);
+    width: 122px;
+    height: 74px;
+}
+.key-benefits{
+    text-align: center;
+}
+.key-benefits h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #1E1C24;
+    max-width: 878px;
+    margin: 0 auto 100px;
+}
+.key-benefits .key-benefits-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.key-benefits .key-benefits-wrapper .key-cards{
+    padding: 25px;
+    width: 22%;
+}
+.key-benefits .key-benefits-wrapper .key-cards .card-image{
+    width: 106px;
+    height: 85px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 6px;
+}
+.key-benefits .key-benefits-wrapper .key-cards .task{
+    background-image: url(assets/images/benefits/Benefits_Icon_Track.svg);
+}
+.key-benefits .key-benefits-wrapper .key-cards .work{
+    background-image: url(assets/images/benefits/Benefits_Icon_Priotitize.svg);
+}
+.key-benefits .key-benefits-wrapper .key-cards .collab{
+    background-image: url(assets/images/benefits/Benefits_Icon_Collaborate.svg);
+}
+.key-benefits .key-benefits-wrapper .key-cards h3{
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #1E1C24;
+}
+.key-benefits .key-benefits-wrapper .key-cards p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #B1AAAA;
+}
+.task-management{
+    padding: 150px 0;
+}
+.task-management .task-management-wrapper{
+    display: flex;
+}
+.task-management .task-management-wrapper .w-50{
+    width: 50%;
+}
+.task-management .task-management-wrapper .w-50 .max-w-xl{
+    max-width: 552px;
+}
+.task-management .task-management-wrapper .w-50 h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #1E1C24;
+    margin-bottom: 15px;
+}
+.task-management .task-management-wrapper .w-50 p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #B1AAAA;
+    margin-bottom: 40px;
+}
+.task-management .task-management-wrapper .w-50 a{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #1E1C24;
+    text-decoration: none;
+}
+.task-management .task-management-wrapper .w-50 a::after{
+    content: "";
+    background-image: url(assets/images/why/Arrow_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 26px;
+    height: 11px;
+    margin-left: 10px;
+}
+footer{
+    border-top: 1px solid #E6E6E6;
+    width: 100%;
+    text-align: center;
+    padding: 160px 0;
+}
+footer .footer-wrapper{
+    max-width: 787px;
+    margin: 0 auto;
+}
+footer .footer-wrapper h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #1E1C24;
+    margin-bottom: 15px;
+}
+footer .footer-wrapper p{
+    font-size: 27px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #1E1C24;
+    margin-bottom: 15px;
+}
+footer .footer-wrapper .form-content{
+    margin-top: 60px;
+}
+footer .footer-wrapper .form-content input{
+    padding:25px;
+    border: 1px solid #EBEBEB;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 46%;
+}
+footer .footer-wrapper .form-content button{
+    background-color: #0634FF;
+    color: #ffffff;
+    padding:20px 48px;
+    font-size: 23px;
+    border-radius: 100px;
+    box-shadow: 0px 30px 50px #0634FF57;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+}
