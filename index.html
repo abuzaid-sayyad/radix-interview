@@ -13,14 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
     <header>
         <div class="container h-full">
             <div class="header-wrapper">
-                <span class="logo">TaskMan</span>
-                <a href="#">Try free</a>
+                <a href="#" class="logo" aria-label="Logo" target="_self" rel="noopener">TaskMan</a>
+                <a href="#" class="cta-btn" aria-label="Try Free" target="_self" rel="noopener">Try free</a>
             </div>
         </div>
     </header>
@@ -31,9 +30,16 @@
                     <h1>Task Management And Lists Tool</h1>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                     <div class="form-content">
-                        <input type="text"placeholder="Name@company.com">
+                        <input type="email" placeholder="Name@company.com">
                         <button>Try for free</button>
                     </div>
+                    <div class="animated-m-circle">
+                        <div class="blury-purple-circle"></div>
+                        <div class="blury-yellow-circle"></div>
+                        <div class="blury-pink-circle"></div>
+                        <img class="first-card-m" loading="lazy" src="assets/images/hero/Hero_Illustration_Card-1.svg" width="410" height="356" alt="mobile first card">
+                    </div>
+
                     <div class="partners">
                         <span class="cn brand"></span>
                         <span class="booking brand"></span>
@@ -47,11 +53,13 @@
                     </div>
                 </div>
                 <div class="w-50">
-                    <div style="position: relative;">
-                        <div class="w-full" style="overflow-x: hidden;">
-                            <img class="w-full h-full" style="position: absolute;top: -1149px;right:-1665px;width: 2429px;height: 2429px;" src="assets/images/hero/Hero_shapes.svg" alt="">
-                        </div>
-                    </div>
+                    <span class="blue-circle-shape"></span>
+                    <span class="yellow-circle-shape"></span>
+                    <span class="gray-circle-shape"></span>
+                    <img class="first-card" loading="lazy" src="assets/images/hero/Hero_Illustration_Card-1.svg" width="760" height="667" alt="Hero Illustration Card1">
+                    <img class="absolute second-card" src="assets/images/hero/Hero_Illustration_Card-2.svg" width="1196" height="667" alt="Hero Illustration Card2">
+                    <img class="absolute third-card" loading="lazy" src="assets/images/hero/Hero_Illustration_Card-3.svg" width="599" height="531" alt="Hero Illustration Card3">
+                    <img class="absolute forth-card" src="assets/images/hero/Hero_Illustration_Card-4.svg" width="549" height="618" alt="Hero Illustration Card4">
                 </div>
             </div>
         </div>
@@ -59,56 +67,63 @@
     <div class="key-benefits">
         <div class="container">
             <h2>Key benefits of using task management software</h2>
-            <div class="key-benefits-wrapper">
-                <div class="key-cards">
+            <ul class="key-benefits-wrapper">
+                <li class="key-cards">
                     <span class="task card-image"></span>
                     <h3>Keep tasks in one place</h3>
                     <p>Save time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
-                </div>
-                <div class="key-cards">
+                </li>
+                <li class="key-cards">
                     <span class="work card-image"></span>
                     <h3>Keep tasks in one place</h3>
                     <p>Save time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
-                </div>
-                <div class="key-cards">
+                </li>
+                <li class="key-cards">
                     <span class="collab card-image"></span>
                     <h3>Keep tasks in one place</h3>
                     <p>Save time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="task-management">
         <div class="container">
             <div class="task-management-wrapper">
                 <div class="w-50">
-                    <!-- <div style="position: relative;">
-                        <div class="w-full" style="overflow-x: hidden;">
-                            <img class="w-full h-full" style="position: absolute;top: -1149px;right:-1665px;width: 2429px;height: 2429px;" src="assets/images/hero/Hero_shapes.svg" alt="">
+                    <div class="relative">
+                        <div>
+                            <img class="rectangle-shape" loading="lazy" src="assets/images/why/Rectangle 556.svg" width="1062" height="1062" alt="Rectangle Shape">
+                            <img class="ellipse-shape" loading="lazy" src="assets/images/why/Why_Shapes_Ellipse.svg" width="1275" height="1275" alt="Ellipse Shape">
+                            <img class="why-card" loading="lazy" src="assets/images/why/Why_Illustration.png" width="654" height="708" alt="Why Card">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="w-50">
                     <div class="max-w-xl">
                         <h2>Why do you need task management software?</h2>
                         <p>Do you waste time organizing sticky notes, searching your email and apps for to-dos, and figuring out what to work on first? Then you need one solution to prioritize your tasks, manage your time, and meet your deadlines.</p>
-                        <a href="#">
+                        <a href="#" aria-label="Learn more" target="_self" rel="noopener">
                             <span>LEARN MORE</span>
                         </a>
+                        <img class="why-card-m" loading="lazy" src="assets/images/why/Why_Illustration.png" width="300" height="325" alt="Why Card Mobile">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+      
     <footer>
-        <div class="footer-wrapper">
-            <h2>Get better work done</h2>
-            <p>See why millions of people across 195 <br>countries use TaskMan.</p>
-            <div class="form-content">
-                <input type="text"placeholder="Name@company.com">
-                <button>Try for free</button>
+        <div class="container">
+            <div class="footer-wrapper">
+                <h2>Get better work done</h2>
+                <p>See why millions of people across 195 <br>countries use TaskMan.</p>
+                <div class="form-content">
+                    <input type="email" placeholder="Name@company.com">
+                    <button>Try for free</button>
+                </div>
             </div>
         </div>
+        <img class="footer-shape" loading="lazy" width="178" height="645" src="assets/images/footer/Signup_Shape.svg" alt="Footer Shape">
     </footer>
 </body>
 </html>

@@ -6,15 +6,17 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 .container{
-    max-width: 1544px;
+    max-width: 1190px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.relative{
+    position: relative;
+}
 header{
     width: 100%;
     position: absolute;
-    top: 56px;
+    top: 34px;
     z-index: 97;
 }
 header .h-full{
@@ -26,74 +28,160 @@ header .h-full .header-wrapper{
     justify-content: space-between;
 }
 header .h-full .header-wrapper .logo{
-    font-size: 30px;
+    font-size: 22px;
     line-height: 36px;
     font-weight: 800;
     color: #1E1C24;
+    text-decoration: none;
 }
-header .h-full .header-wrapper a{
-    font-size: 20px;
-    line-height: 27px;
+header .h-full .header-wrapper .logo:hover{
+    color: #0634FF;
+}
+header .h-full .header-wrapper .cta-btn{
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     border-radius: 100px;
-    padding: 15px 32px;
+    padding: 10px 24px;
     border: 2px solid #ffffff;
+    letter-spacing: 1.08px;
 }
-
+header .h-full .header-wrapper .cta-btn:hover{
+    color: #FFBC00;
+    border: 2px solid #FFBC00;
+}
 .hero-section{
     overflow: hidden;
 }
 .hero-section .hero-section-wrapper{
     display:flex; 
-    padding: 308px 0;
+    margin: 250px 0 180px;
 }
 .hero-section .hero-section-wrapper .w-50{
     width: 50%;
     position: relative;
 }
+.hero-section .hero-section-wrapper .w-50 .blue-circle-shape,
+.hero-section .hero-section-wrapper .w-50 .yellow-circle-shape,
+.hero-section .hero-section-wrapper .w-50 .gray-circle-shape {
+    position: absolute;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.hero-section .hero-section-wrapper .w-50 .blue-circle-shape {
+    top: -890px;
+    right: -1120px;
+    width: 1701px;
+    height: 1701px;
+    background-color: #0634FF;
+}
+
+.hero-section .hero-section-wrapper .w-50 .yellow-circle-shape {
+    top: -632px;
+    right: -915px;
+    width: 1404.64px;
+    height: 1404.64px;
+    background-color: #FFBC00;
+}
+
+.hero-section .hero-section-wrapper .w-50 .gray-circle-shape {
+    top: -384px;
+    right: -794px;
+    width: 1140px;
+    height: 1140px;
+    background-color: #3A4151;
+}
+
+.hero-section .hero-section-wrapper .w-50 .first-card{
+    position: absolute;
+    top: -196px;
+    right: 3px;
+    z-index: 10;
+    width: 535px;
+    height: 470px;
+}
+.hero-section .hero-section-wrapper .w-50 .first-card-m{
+    display: none;
+}
+.hero-section .hero-section-wrapper .w-50 .second-card{
+    position: absolute;
+    top: 2px;
+    right: -130px;
+    z-index: 9;
+    width: 843px;
+    height: 463px;
+}
+.hero-section .hero-section-wrapper .w-50 .third-card{
+    position: absolute;
+    top: 170px;
+    right: 68px;
+    z-index: 7;
+    width: 599px;
+    height: 531px;
+}
+.hero-section .hero-section-wrapper .w-50 .forth-card{
+    position: absolute;
+    top: 162px;
+    right: -178px;
+    z-index: 8;
+    width: 549px;
+    height: 618px;
+}
 .hero-section .hero-section-wrapper .w-50 h1{
-    font-size: 75px;
-    line-height: 97px;
+    font-size: 54px;
+    line-height: 70px;
     font-weight: 800;
     color: #1E1C24;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .hero-section .hero-section-wrapper .w-50 p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
-    line-height:35px;
+    line-height:24px;
     color: #B1AAAA;
-    max-width: 595px;
+    max-width: 416px;
 }
 .hero-section .hero-section-wrapper .w-50 .form-content{
-    margin-top: 40px;
+    margin-top: 45px;
 }
-.hero-section .hero-section-wrapper .w-50 .form-content input{
-    padding:25px;
+.form-content input{
+    padding: 16px;
     border: 1px solid #EBEBEB;
-    font-size: 20px;
+    font-size: 14px;
     border-radius: 100px;
     width: 46%;
+    letter-spacing: 0.8px;
 }
-.hero-section .hero-section-wrapper .w-50 .form-content button{
+.form-content button{
     background-color: #0634FF;
     color: #ffffff;
-    padding:20px 48px;
-    font-size: 23px;
+    padding:16px 36px;
+    font-size: 16px;
     border-radius: 100px;
     box-shadow: 0px 30px 50px #0634FF57;
     border: none;
     outline: none;
-    margin-left: 40px;
+    margin-left: 30px;
+    letter-spacing: 0.92px;
+    cursor: pointer;
+}
+.form-content button:hover{
+    background-color: #0634FF;
+    box-shadow: 0px 40px 40px #0634FF57;
 }
 .hero-section .hero-section-wrapper .w-50 .partners{
-    margin-top: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: space-between;
+    margin-top: 146px;
+    position: relative;
+    z-index: 10;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .brand{
-    margin-bottom: 60px;
-    margin-right: 50px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -107,72 +195,74 @@ header .h-full .header-wrapper a{
 }
 .hero-section .hero-section-wrapper .w-50 .partners .cn{
     background-image: url(assets/images/partners/Cartoon_Network_logo.svg);
-    width: 97px;
-    height: 59px;
+    width: 72px;
+    height: 43px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .booking{
     background-image: url(assets/images/partners/Booking.com_logo.svg);
-    width: 262px;
-    height: 44px;
+    width: 186px;
+    height: 34px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .dropbox{
     background-image: url(assets/images/partners/Dropbox_logo.svg);
-    width: 229px;
-    height: 45px;
+    width: 161px;
+    height: 32px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .toshiba{
     background-image: url(assets/images/partners/Toshiba_logo.svg);
-    width: 207px;
-    height: 32px;
+    width: 147px;
+    height: 23px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .slack{
     background-image: url(assets/images/partners/Slack_logo.svg);
-    width: 156px;
-    height: 47px;
+    width: 110px;
+    height: 28px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .netflix{
     background-image: url(assets/images/partners/Netflix_logo.svg);
-    width: 142px;
-    height: 39px;
+    width: 102px;
+    height: 27px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .spotify{
     background-image: url(assets/images/partners/Spotify_logo.svg);
-    width: 189px;
-    height: 57px;
+    width: 136px;
+    height: 42px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .coca{
     background-image: url(assets/images/partners/CocaCola_logo.svg);
-    width: 157px;
-    height: 51px;
+    width: 111px;
+    height: 36px;
 }
 .hero-section .hero-section-wrapper .w-50 .partners .red-bull{
     background-image: url(assets/images/partners/RedBull_logo.svg);
-    width: 122px;
-    height: 74px;
+    width: 87px;
+    height: 53px;
 }
 .key-benefits{
     text-align: center;
 }
 .key-benefits h2{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 42px;
     font-weight: bold;
     color: #1E1C24;
-    max-width: 878px;
-    margin: 0 auto 100px;
+    max-width: 462px;
+    margin: 0 auto 52px;
 }
 .key-benefits .key-benefits-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    max-width: 950px;
+    margin: 0 auto;
+    list-style-type: none;
 }
 .key-benefits .key-benefits-wrapper .key-cards{
     padding: 25px;
     width: 22%;
 }
 .key-benefits .key-benefits-wrapper .key-cards .card-image{
-    width: 106px;
-    height: 85px;
+    width: 90px;
+    height: 75px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -188,19 +278,20 @@ header .h-full .header-wrapper a{
     background-image: url(assets/images/benefits/Benefits_Icon_Collaborate.svg);
 }
 .key-benefits .key-benefits-wrapper .key-cards h3{
-    font-size: 25px;
-    line-height: 60px;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: bold;
     color: #1E1C24;
+    margin-bottom: 10px;
 }
 .key-benefits .key-benefits-wrapper .key-cards p{
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 13px;
+    line-height: 18px;
     font-weight: 400;
     color: #B1AAAA;
 }
 .task-management{
-    padding: 150px 0;
+    padding: 215px 0;
 }
 .task-management .task-management-wrapper{
     display: flex;
@@ -208,29 +299,58 @@ header .h-full .header-wrapper a{
 .task-management .task-management-wrapper .w-50{
     width: 50%;
 }
+.task-management .task-management-wrapper .w-50 .rectangle-shape{
+    position: absolute;
+    top: -378px;
+    left: -376px;
+    width: 744px;
+    height: auto;
+}
+.task-management .task-management-wrapper .w-50 .ellipse-shape{
+    position: absolute;
+    top: -24px;
+    left: -625px;
+    z-index: 10;
+    width: 908px;
+    height: auto;
+}
+.task-management .task-management-wrapper .w-50 .why-card{
+    position: absolute;
+    top: -114px;
+    left: 16px;
+    width: 654px;
+    height: auto;
+}
+.task-management .task-management-wrapper .w-50 .why-card-m{
+    display: none;
+}
 .task-management .task-management-wrapper .w-50 .max-w-xl{
-    max-width: 552px;
+    max-width: 380px;
+    padding-left: 124px;
 }
 .task-management .task-management-wrapper .w-50 h2{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 42px;
     font-weight: bold;
     color: #1E1C24;
     margin-bottom: 15px;
 }
 .task-management .task-management-wrapper .w-50 p{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 13px;
+    line-height: 21px;
     font-weight: 400;
     color: #B1AAAA;
     margin-bottom: 40px;
 }
 .task-management .task-management-wrapper .w-50 a{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
     font-weight: bold;
     color: #1E1C24;
     text-decoration: none;
+}
+.task-management .task-management-wrapper .w-50 a:hover{
+    text-decoration: underline;
 }
 .task-management .task-management-wrapper .w-50 a::after{
     content: "";
@@ -238,30 +358,32 @@ header .h-full .header-wrapper a{
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    width: 26px;
-    height: 11px;
-    margin-left: 10px;
+    width: 20px;
+    height: 8px;
+    margin-left: 6px;
 }
 footer{
     border-top: 1px solid #E6E6E6;
     width: 100%;
     text-align: center;
-    padding: 160px 0;
+    padding: 114px 0;
+    position: relative;
+    margin-top: 88px;
 }
 footer .footer-wrapper{
     max-width: 787px;
     margin: 0 auto;
 }
 footer .footer-wrapper h2{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 42px;
     font-weight: bold;
     color: #1E1C24;
     margin-bottom: 15px;
 }
 footer .footer-wrapper p{
-    font-size: 27px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
     color: #1E1C24;
     margin-bottom: 15px;
@@ -269,21 +391,464 @@ footer .footer-wrapper p{
 footer .footer-wrapper .form-content{
     margin-top: 60px;
 }
-footer .footer-wrapper .form-content input{
-    padding:25px;
-    border: 1px solid #EBEBEB;
-    font-size: 20px;
-    border-radius: 100px;
-    width: 46%;
+footer .footer-shape{
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 130px;
+    height: auto;
 }
-footer .footer-wrapper .form-content button{
-    background-color: #0634FF;
-    color: #ffffff;
-    padding:20px 48px;
-    font-size: 23px;
-    border-radius: 100px;
-    box-shadow: 0px 30px 50px #0634FF57;
-    border: none;
-    outline: none;
-    margin-left: 40px;
+@media screen and (max-width: 768px) {
+    header{
+        top: 20px;
+    }
+    header .h-full .header-wrapper .cta-btn{
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        border: 2px solid #000;
+    }
+    .hero-section .hero-section-wrapper{
+        display:block; 
+        margin: 130px 0 130px;
+        text-align: center;
+    }
+    .hero-section .hero-section-wrapper .w-50{
+        width: 100%;
+    }
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle{
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        margin: 90px auto 0;
+    }
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-purple-circle,
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-yellow-circle,
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-pink-circle{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        opacity: 0.7;
+        animation: blob 7s infinite;
+    }
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-purple-circle{
+        top: 0;
+        left: -16px;
+        background-color: #d8b4fe;
+    }
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-yellow-circle{
+        top: 0;
+        right: -16px;
+        background-color: #fde047;
+        animation-delay: 2s;
+    }
+    .hero-section .hero-section-wrapper .w-50 .animated-m-circle .blury-pink-circle{
+        bottom: -36px;
+        left: 80px;
+        background-color: #f9a8d4;
+        animation-delay: 4s;
+    }
+    @keyframes blob {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+          transform: tranlate(0px, 0px) scale(1);
+        }
+    }
+    .hero-section .hero-section-wrapper .w-50 .blue-circle-shape,
+    .hero-section .hero-section-wrapper .w-50 .yellow-circle-shape,
+    .hero-section .hero-section-wrapper .w-50 .gray-circle-shape {
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .first-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .first-card-m{
+        display: block;
+        z-index: 10;
+        width: 410px;
+        height: 356px;
+        position: relative;
+        margin-top: -100px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .hero-section .hero-section-wrapper .w-50 .second-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .third-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .forth-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 h1{
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .hero-section .hero-section-wrapper .w-50 p{
+        margin: 0 auto;
+    }
+    .form-content{
+        max-width: 330px;
+        margin: 0 auto;
+    }
+    .form-content input{
+        padding: 14px;
+        width: 90%;
+        margin-bottom: 16px;
+    }
+    .form-content button{
+        padding:14px 14px;
+        font-size: 14px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners{
+        gap: 18px;
+        justify-content: center;
+        margin-top: 96px;
+    }
+    .key-benefits h2{
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 auto;
+    }
+    .key-benefits .key-benefits-wrapper{
+        display: block;
+    }
+    .key-benefits .key-benefits-wrapper .key-cards{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .key-benefits .key-benefits-wrapper .key-cards h3{
+        margin-bottom: 4px;
+    }
+    .task-management{
+        padding: 44px 0 0;
+        text-align: center;
+    }
+    .task-management .task-management-wrapper{
+        display: block;
+    }
+    .task-management .task-management-wrapper .w-50{
+        width: 100%;
+    }
+    .task-management .task-management-wrapper .w-50 .rectangle-shape{
+        display: none;
+    }
+    .task-management .task-management-wrapper .w-50 .ellipse-shape{
+        display: none;
+    }
+    .task-management .task-management-wrapper .w-50 .why-card{
+        display: none;
+    }
+    .task-management .task-management-wrapper .w-50 .why-card-m{
+        display: inline;
+        position: relative;
+        width: 300px;
+        height: auto;
+    }
+    .task-management .task-management-wrapper .w-50 .max-w-xl{
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .task-management .task-management-wrapper .w-50 h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .task-management .task-management-wrapper .w-50 p{
+        margin-bottom: 15px;
+    }
+    footer{
+        padding: 50px 0;
+        position: relative;
+        margin-top: 0;
+    }
+    footer .footer-wrapper h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    footer .footer-wrapper p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    footer .footer-wrapper .form-content{
+        margin-top: 24px;
+    }
+    footer .footer-shape{
+        display: none;
+    }
+}
+@media  screen and (min-width: 769px) and (max-width: 1088px){
+    .hero-section .hero-section-wrapper {
+        margin: 153px 0 50px;
+    }
+    .hero-section .hero-section-wrapper .w-50 h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .first-card{
+        top: -40px;
+        width: 388px;
+        height: 340px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .form-content {
+        margin-top: 26px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners {
+        justify-content: start;
+    }
+    .hero-section .hero-section-wrapper .w-50 .blue-circle-shape {
+        top: -331px;
+        right: -600px;
+        width: 965px;
+        height: 965px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .yellow-circle-shape {
+        top: -159px;
+        right: -525px;
+        width: 796px;
+        height: 796px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .gray-circle-shape {
+        top: -5px;
+        right: -453px;
+        width: 646px;
+        height: 646px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .second-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .third-card{
+        display: none;
+    }
+    .hero-section .hero-section-wrapper .w-50 .forth-card{
+        display: none;
+    }
+    .form-content{
+        position: relative;
+        z-index: 10;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .form-content input{
+        width: 90%;
+    }
+    .form-content button{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .task-management .task-management-wrapper .w-50 .why-card {
+        left: -79px;
+    }
+}
+@media  screen and (min-width: 1800px) {
+    .container{
+        max-width: 1544px;
+    }
+    header{
+        top: 56px;
+    }
+    header .h-full .header-wrapper .logo{
+        font-size: 30px;
+    }
+    header .h-full .header-wrapper .cta-btn{
+        font-size: 20px;
+        line-height: 27px;
+        padding: 15px 32px;
+    }
+    .hero-section .hero-section-wrapper{
+        margin: 308px 0;
+    }    
+    .hero-section .hero-section-wrapper .w-50 .blue-circle-shape {
+        top: -1149px;
+        right: -1665px;
+        width: 2429px;
+        height: 2429px;
+    }    
+    .hero-section .hero-section-wrapper .w-50 .yellow-circle-shape {
+        top: -791px;
+        right: -1432px;
+        width: 2071px;
+        height: 2071px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .gray-circle-shape {
+        top: -439px;
+        right: -1251px;
+        width: 1716px;
+        height: 1716px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .first-card{
+        top: -150px;
+        right: -60px;
+        width: auto;
+        height: auto;
+    }
+    .hero-section .hero-section-wrapper .w-50 .second-card{
+        top: 108px;
+        right: -242px;
+        width: auto;
+        height: auto;
+    }
+    .hero-section .hero-section-wrapper .w-50 .third-card{
+        top: 358px;
+        right: 53px;
+        width: auto;
+        height: auto;
+    }
+    .hero-section .hero-section-wrapper .w-50 .forth-card{
+        top: 330px;
+        right: -311px;
+        width: auto;
+        height: auto;
+    }
+    .hero-section .hero-section-wrapper .w-50 h1{
+        font-size: 75px;
+        line-height: 97px;
+        margin-bottom: 30px;
+    }
+    .hero-section .hero-section-wrapper .w-50 p{
+        font-size: 20px;
+        line-height:35px;
+        max-width: 595px;
+    }
+    .form-content input{
+        padding:25px;
+        font-size: 20px;
+    }
+    .form-content button{
+        padding:20px 48px;
+        font-size: 23px;
+        margin-left: 40px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners{
+        margin-top: 210px;
+        gap: 60px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .cn{
+        width: 97px;
+        height: 59px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .booking{
+        width: 262px;
+        height: 44px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .dropbox{
+        width: 229px;
+        height: 45px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .toshiba{
+        width: 207px;
+        height: 32px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .slack{
+        width: 156px;
+        height: 47px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .netflix{
+        width: 142px;
+        height: 39px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .spotify{
+        width: 189px;
+        height: 57px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .coca{
+        width: 157px;
+        height: 51px;
+    }
+    .hero-section .hero-section-wrapper .w-50 .partners .red-bull{
+        width: 122px;
+        height: 74px;
+    }
+    .key-benefits h2{
+        font-size: 50px;
+        line-height: 60px;
+        max-width: 878px;
+        margin: 0 auto 100px;
+    }
+    .key-benefits .key-benefits-wrapper{
+        padding: 0 100px;
+        max-width: 100%;
+    }
+    .key-benefits .key-benefits-wrapper .key-cards .card-image{
+        width: 106px;
+        height: 85px;
+    }
+    .key-benefits .key-benefits-wrapper .key-cards h3{
+        font-size: 25px;
+        line-height: 60px;
+    }
+    .key-benefits .key-benefits-wrapper .key-cards p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .task-management{
+        padding: 315px 0;
+    }
+    .task-management .task-management-wrapper .w-50 .rectangle-shape{
+        top: -580px;
+        left: -605px;
+        width: auto;
+    }
+    .task-management .task-management-wrapper .w-50 .ellipse-shape{
+        top: -58px;
+        left: -934px;
+        z-index: 10;
+        width: auto;
+    }
+    .task-management .task-management-wrapper .w-50 .why-card{
+        top: -193px;
+        left: -37px;
+        width: auto;
+    }
+    .task-management .task-management-wrapper .w-50 .max-w-xl{
+        max-width: 552px;
+    }
+    .task-management .task-management-wrapper .w-50 h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .task-management .task-management-wrapper .w-50 p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .task-management .task-management-wrapper .w-50 a{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .task-management .task-management-wrapper .w-50 a::after{
+        width: 26px;
+        height: 11px;
+        margin-left: 10px;
+    }
+    footer{
+        padding: 160px 0;
+    }
+    footer .footer-wrapper h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    footer .footer-wrapper p{
+        font-size: 27px;
+        line-height: 35px;
+    }
+    footer .footer-shape{
+        width: auto;
+    }
 }
